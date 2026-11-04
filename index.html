@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bro is not cool</title>
+<meta name="description" content="yeah dude you aint cool, stfu">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bro.is-not.cool/">
+<meta property="og:title" content="bro is not cool">
+<meta property="og:description" content="yeah dude you aint cool, stfu">
+<meta property="og:image" content="https://bro.is-not.cool/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#2f6bff">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -9.5 24 24'><path d='M0 0h24v1H0zM2 1h2v1H2zM6 1h4v1H6zM14 1h2v1h-2zM18 1h4v1h-4zM2 2h1v1H2zM5 2h5v1H5zM14 2h1v1h-1zM17 2h5v1h-5zM3 3h6v1H3zM15 3h6v1h-6zM4 4h4v1H4zM16 4h4v1h-4z'/></svg>">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; }
+  body {
+    background: radial-gradient(circle at 50% 40%, #3f74ff, #1d4fe0);
+    color: #fff;
+    font-family: Anton, Impact, "Arial Black", sans-serif;
+    text-transform: uppercase;
+  }
+  main {
+    height: 100svh;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 3vh; text-align: center; padding: 0 4vw; box-sizing: border-box;
+  }
+  .top, h1 {
+    margin: 0; line-height: 1; position: relative; z-index: 1;
+    -webkit-text-stroke: 0.08em #000; paint-order: stroke fill;
+  }
+  .top { font-size: clamp(2rem, 7vw, 13vh); animation: fade .4s both; }
+  h1 { font-size: min(30vw, 32vh); animation: slam .25s 2.1s both cubic-bezier(.2, 1.6, .4, 1); }
+  svg {
+    width: min(80vw, 520px); shape-rendering: crispEdges;
+    animation: nope 2s both;
+  }
+
+  @keyframes fade { from { opacity: 0; } }
+  @keyframes slam { from { opacity: 0; transform: scale(3) rotate(-8deg); } }
+  /* the cool glasses drop in, refuse you, and slide off */
+  @keyframes nope {
+    0%   { transform: translateY(-110vh); animation-timing-function: ease-in; }
+    30%  { transform: translateY(0); }
+    37%  { transform: translateY(-10px); }
+    44%  { transform: translateY(0) rotate(0); }
+    52%  { transform: rotate(-8deg); }
+    60%  { transform: rotate(8deg); }
+    68%  { transform: rotate(-8deg); }
+    76%  { transform: rotate(0); animation-timing-function: ease-in; }
+    100% { transform: translate(8%, 60%) rotate(12deg); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 1ms !important; animation-delay: 0s !important; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="top">yeah dude you aint cool,</p>
+  <svg viewBox="0 0 24 5" role="img" aria-label="cool sunglasses refusing to go on you">
+    <path d="M0 0h24v1H0zM2 1h2v1H2zM6 1h4v1H6zM14 1h2v1h-2zM18 1h4v1h-4zM2 2h1v1H2zM5 2h5v1H5zM14 2h1v1h-1zM17 2h5v1h-5zM3 3h6v1H3zM15 3h6v1h-6zM4 4h4v1H4zM16 4h4v1h-4z"/>
+    <path fill="#fff" d="M4 1h2v1H4zM16 1h2v1h-2zM3 2h2v1H3zM15 2h2v1h-2z"/>
+  </svg>
+  <h1>stfu</h1>
+</main>
+</body>
+</html>
